@@ -3,7 +3,7 @@
 Problem Statement: http://usaco.org/index.php?page=viewproblem2&cpid=1277
 
 This problem can be broken down into a series of if/else statements:
-1)  If the length of the string is < 3, forming MOO is impossible, so the
+1)  If the length of the string is < 3, forming "MOO" is impossible, so the
     answer is -1
 2)  If the string contains the substring "MOO", remove all other characters. If
     the length of the string is L, this will take L-3 operations.
@@ -20,8 +20,8 @@ This problem can be broken down into a series of if/else statements:
     first to 'M' and the last to 'O'. This will take L-3+2 = L-1 operations.
 6)  If none of the above conditions are met, we cannot form "MOO" so print -1.
 
-Note that these checks should be done in order, and if the condition is
-satisfied then that is the answer.
+Note that these checks should be done in order. If a condition is satisfied
+then we have found an answer and should not do any more checks.
 
 */
 
@@ -49,10 +49,6 @@ int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
-
-#ifdef DEBUG_LOCAL
-    freopen("in.txt", "r", stdin);
-#endif
 
     int q;
     std::cin >> q;
