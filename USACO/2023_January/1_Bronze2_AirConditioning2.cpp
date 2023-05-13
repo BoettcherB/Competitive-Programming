@@ -34,7 +34,8 @@ int solve(int index, int cooling[N]) {
             newCooling[i] += AC_cooling[index];
     }
     int cost_with = solve(index + 1, newCooling) + cost[index];
-    return std::min(cost_with, solve(index + 1, cooling));
+    int cost_without = solve(index + 1, cooling);
+    return std::min(cost_with, cost_without);
 }
 
 int main() {
