@@ -13,7 +13,8 @@ First, lets handle the case where both knights are on new squares. There are
 x = 2k-1 new squares. If we place a knight on square 1 there are x-1 spaces for
 the second knight. Next, if we place a knight on square 2 there are x-2 spaces
 for the second knight... In total, the answer is the sum of the first x-1
-natural numbers, which is equal to x*(x-1)/2.
+integers, which is x*(x-1)/2. However, there are 2 cases near the middle corner
+where the knights can attack each other, so the actual result is x*(x-1)/2-2.
 
 Next, let's look at cases where only 1 knight is on a new square. We can find
 how many combinations there are for placing a knight on any new square by
