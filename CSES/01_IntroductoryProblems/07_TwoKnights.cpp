@@ -39,7 +39,7 @@ this still works for the cases where k is small (2 <= k <= 5).
 
 x = 2*k-1
 num_old_squares = (k-1)*(k-1)
-c0 = x*(x-1)/2                       // both on new squares
+c0 = x*(x-1)/2-2                     // both on new squares
 c1 = 5*(num_old_squares - 2)         // attacks 2 old squares
 c2 = 4*(num_old_squares - 3)         // attacks 3 old squares
 c3 = 2(k-5)(num_old_squares - 4)     // attacks 4 old squares
