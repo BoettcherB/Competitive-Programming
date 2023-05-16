@@ -2,7 +2,23 @@
 
 If we arrange the integer numbers starting at 1 in a spiral grid (as shown in
 this picture: https://cses.fi/problemset/task/1071/) where cell (1, 1) is at
-the top left, find the number in cell (y, x) (row y and column x).
+the top left, find the number in cell (y, x) (row y and column x). Do this for
+T test cases. 
+
+Constraints:
+ - 1 <= T <= 100,000
+ - 1 <= y, x <= 1,000,000,000
+
+Example Input:
+3
+2 3
+1 1
+4 2
+
+Example Output:
+8
+1
+15
 
 This problem becomes easy once we notice a certain property of the spiral. For
 every cell (y,x) below the diagonal (y > x), we can travel to the right to
