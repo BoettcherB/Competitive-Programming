@@ -3,10 +3,6 @@
 Given an integer n, calculate the number of bit strings of length n. Print the
 answer modulo 10^9 + 7.
 
-The answer to this is just 2^n. Set up a variable res = 1 and perform res *= 2
-n times. At each step, make sure to also perform res %= 10^9 + 7 to avoid
-integer overflow.
-
 Constraints:
  - 1 <= n <= 1,000,000
 
@@ -15,6 +11,10 @@ Example Input:
 
 Example Output:
 8
+
+The answer to this is just 2^n. Set up a variable res = 1 and perform res *= 2
+n times. At each step, make sure to also perform res %= 10^9 + 7 to avoid
+integer overflow.
 
 */
 
