@@ -27,7 +27,6 @@ Example Output:
 
 #include <iostream>
 #include <string>
-#include <cmath>
 
 const int N = 7e4 + 10;
 
@@ -46,8 +45,7 @@ int main() {
     while (change) {
         change = false;
         for (int i = n - 1; i >= 0; --i) {
-            int p2i = (int) std::exp2(i);
-            int new_val = str_val + (str[i] == '0' ? p2i : -p2i);
+            int new_val = str_val + (1 << i) * (str[i] == '0' ? 1 : -1);
             if (!seen[new_val]) {
                 str[i] = str[i] == '0' ? '1' : '0';
                 std::cout << str << '\n';
