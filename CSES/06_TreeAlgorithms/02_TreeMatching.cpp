@@ -4,6 +4,21 @@ Given a tree with n nodes as a list of edges, find the size of the largest
 matching. A matching is a set of edges where each node is an endpoint of at
 most 1 edge (i.e. a set of edges where no 2 edges are adjacent / share a node).
 
+Constraints:
+ - 1 <= n <= 200,000
+ - 1 <= a, b <= n (for each given edge (a, b))
+ - The given edges make a single tree
+
+Example Input:
+5
+1 2
+1 3
+3 4
+3 5
+
+Example Output:
+2
+
 This problem can be solved using DP on trees. We can define dp[i][0] to be the
 size of the largest matching of the subtree rooted at node i. Similarly, we can
 define dp[i][1] to be the largest matching of the subtree rooted at node i, but
@@ -28,21 +43,6 @@ Recurrence:
 
 We can use dfs to find the values of dp[][] for the children of i before
 calculating the values for i. For any leaf node L, dp[L][0] = dp[L][1] = 0.
-
-Constraints:
- - 1 <= n <= 200,000
- - 1 <= a, b <= n (for each given edge (a, b))
- - The given edges make a single tree
-
-Example Input:
-5
-1 2
-1 3
-3 4
-3 5
-
-Example Output:
-2
 
 */
 
