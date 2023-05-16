@@ -4,6 +4,22 @@ You are given an integer n. For all 1 <= k <= n, find the number of possible
 ways that 2 knights can be placed on a kxk chessboard so that they cannot
 attack each other.
 
+Constraints:
+ - 1 <= n <= 10,000
+ 
+Example Input:
+8
+
+Example Output:
+0
+6
+28
+96
+252
+550
+1056
+1848
+
 When moving from k-1 to k, all we are doing is adding 1 more row and 1 more
 column to the board (for a total of 2k-1 added squares). All of the legal moves
 from the previous k-1 x k-1 grid are still legal here. Now we just have to
@@ -47,22 +63,6 @@ res += c0 + c1 + c2 + c3
 
 We can also use algebra to simply all of this into a single cubic equation:
 2k^3 - 3k^2 - 7k + 16
-
-Constraints:
- - 1 <= n <= 10,000
- 
-Example Input:
-8
-
-Example Output:
-0
-6
-28
-96
-252
-550
-1056
-1848
 
 */
 
