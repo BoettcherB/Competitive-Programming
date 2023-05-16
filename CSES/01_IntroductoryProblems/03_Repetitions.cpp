@@ -4,10 +4,6 @@ You are given a string of length n containing the characters A, C, G, and T.
 Find the length of the longest repetition in this string (a repetition is a
 substring where all characters are equal).
 
-To solve this problem, loop through the characters of the string while keeping
-track of the length of the current repetition and the length of the longest
-repetition.
-
 Constraints:
  - 1 <= n <= 1,000,000
 
@@ -16,6 +12,10 @@ ATTCGGGA
 
 Example Output:
 3
+
+To solve this problem, loop through the characters of the string while keeping
+track of the length of the current repetition and the length of the longest
+repetition.
 
 */
 
