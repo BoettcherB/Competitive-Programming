@@ -5,13 +5,6 @@ is possible, print "YES", then print the size of the first set and all its
 elements, then the size of the second set and all its elements. If this is not
 possible, print "NO".
 
-This division is possible if the sum of the first n numbers is even. The sum of
-the first n numbers is s = n(n+1)/2. If s is even then each set will require a
-sum of s/2. We can use a greedy approach to divide the numbers. Let rem1 be the
-total sum that set 1 still requires (its initial value is s/2). Loop through
-the numbers from n to 1. If the current number i is <= rem1, add i to set 1 and
-subtract i from rem1. If i > rem1, add i to set 2.
-
 Constraints:
  - 1 <= n <= 1,000,000
 
@@ -24,6 +17,13 @@ YES
 1 2 4 7
 3
 3 5 6
+
+This division is possible if the sum of the first n numbers is even. The sum of
+the first n numbers is s = n(n+1)/2. If s is even then each set will require a
+sum of s/2. We can use a greedy approach to divide the numbers. Let rem1 be the
+total sum that set 1 still requires (its initial value is s/2). Loop through
+the numbers from n to 1. If the current number i is <= rem1, add i to set 1 and
+subtract i from rem1. If i > rem1, add i to set 2.
 
 */
 
