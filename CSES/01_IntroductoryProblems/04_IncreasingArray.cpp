@@ -4,11 +4,6 @@ You are given an array of n elements. If one operation involves increasing a
 single element by 1, determine the minimum number of operations needed to make
 the array increasing (a[i] <= a[i-1] for all 1 < i <= n).
 
-For every 1 < i <= n, determine whether element a[i] is smaller than the
-previous element a[i-1]. If so, we need to perform a[i-1] - a[i] operations to
-make the array non-decreasing. Keep a count of the total number of operations
-in a 64-bit number.
-
 Constraints:
  - 1 <= n <= 200,000
  - 1 <= a[i] <= 1,000,000,000
@@ -19,6 +14,11 @@ Example Input:
 
 Example Output:
 5
+
+For every 1 < i <= n, determine whether element a[i] is smaller than the
+previous element a[i-1]. If so, we need to perform a[i-1] - a[i] operations to
+make the array non-decreasing. Keep a count of the total number of operations
+in a 64-bit number.
 
 */
 
