@@ -4,13 +4,6 @@ You are given an integer n. Create a list of all the 2^n bit strings of length
 n, but order them in such a way that any two successive strings differ by only
 one bit.
 
-This problem can be solved with a greedy method. For every bit string, we can
-try flipping every bit in order. If we flip a bit but have already seen the
-resulting string, un-flip the bit and try the next one. Once we find a new bit
-string that we haven't seen yet, we can mark it as seen and print it. One
-optimization is to treat each bit string as a number, since comparing numbers
-is faster than comparing strings.
-
 Constraints:
  - 1 <= n <= 16
 
@@ -22,6 +15,13 @@ Example Output:
 01
 11
 10
+
+This problem can be solved with a greedy method. For every bit string, we can
+try flipping every bit in order. If we flip a bit but have already seen the
+resulting string, un-flip the bit and try the next one. Once we find a new bit
+string that we haven't seen yet, we can mark it as seen and print it. One
+optimization is to treat each bit string as a number, since comparing numbers
+is faster than comparing strings.
 
 */
 
