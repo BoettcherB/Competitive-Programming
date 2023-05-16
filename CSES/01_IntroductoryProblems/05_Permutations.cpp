@@ -4,9 +4,6 @@ Given an integer n, construct a permutation of the numbers 1..n where no two
 adjacent elements have a different of 1. If no such permutation exists, print
 "NO SOLUTION". If there are multiple possible solutions, print any of them.
 
-The only values of n where no solution exists are 2 and 3. For every other
-value of n we can print all the even numbers, then all the odd numbers.
-
 Constraints:
  - 1 <= n <= 1,000,000
 
@@ -15,6 +12,9 @@ Example Input:
 
 Example Output:
 4 2 5 3 1
+
+The only values of n where no solution exists are 2 and 3. For every other
+value of n we can print all the even numbers, then all the odd numbers.
 
 */
 
