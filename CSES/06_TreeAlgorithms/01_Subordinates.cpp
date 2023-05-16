@@ -4,9 +4,6 @@ Given a tree of n nodes (1..n) rooted at node 1, find the number of descendents
 of each node. We are given a list of n-1 integers: the parent of nodes (2..n).
 Print n integers: the total number of descendents for nodes (1..n).
 
-This problem can be solved by using dfs to find the total subtree size for each
-node. Then, the total number of descendents for node i is subtree_size[i] - 1.
-
 Constraints:
  - 1 <= n <= 200,000
  - The input forms a single tree
@@ -17,6 +14,9 @@ Example Input:
 
 Example Output:
 4 1 1 0 0
+
+This problem can be solved by using dfs to find the total subtree size for each
+node. Then, the total number of descendents for node i is subtree_size[i] - 1.
 
 */
 
