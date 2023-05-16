@@ -3,14 +3,6 @@
 You are given a string consisting of n letters A-Z. Rearrange the letters so
 that the string is a palindrome. If this is not possible, print "NO SOLUTION".
 
-Loop through all the letters of the string and count how many times each letter
-appears. It is not possible to form a palindrome if there are multiple letters
-that appear an odd number of times, or if there is a letter that appears an odd
-number of times and the string has an even number of characters. Place the
-first pair of letters that are the same in positions 0 and n-1, then place the
-next pair in positions 1 and n-2.... If there is a letter with an odd count,
-place the odd number in position n/2.
-
 Constraints:
  - 1 <= n <= 1,000,000
 
@@ -19,6 +11,14 @@ AAAACACBA
 
 Example Output:
 AACABACAA
+
+Loop through all the letters of the string and count how many times each letter
+appears. It is not possible to form a palindrome if there are multiple letters
+that appear an odd number of times, or if there is a letter that appears an odd
+number of times and the string has an even number of characters. Place the
+first pair of letters that are the same in positions 0 and n-1, then place the
+next pair in positions 1 and n-2.... If there is a letter with an odd count,
+place the odd number in position n/2.
 
 */
 
