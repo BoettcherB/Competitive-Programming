@@ -4,7 +4,7 @@ You are given an integer n and all numbers 1..n (inclusive) except one.
 Determine which number is missing and print it.
 
 Constraints:
- - 2 <= n <= 200,000
+    2 <= n <= 200,000
 
 Example Input:
 5
