@@ -6,8 +6,8 @@ the top left, find the number in cell (y, x) (row y and column x). Do this for
 T test cases. 
 
 Constraints:
- - 1 <= T <= 100,000
- - 1 <= y, x <= 1,000,000,000
+    1 <= T <= 100,000
+    1 <= y, x <= 1,000,000,000
 
 Example Input:
 3
