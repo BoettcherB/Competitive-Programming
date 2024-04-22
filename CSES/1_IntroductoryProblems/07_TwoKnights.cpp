@@ -5,7 +5,7 @@ ways that 2 knights can be placed on a kxk chessboard so that they cannot
 attack each other.
 
 Constraints:
- - 1 <= n <= 10,000
+    1 <= n <= 10,000
  
 Example Input:
 8
