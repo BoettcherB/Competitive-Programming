@@ -27,7 +27,7 @@ and perform the operation dp[i] += dp[i - c_1] + ... + dp[i - c_n].
 
 #include <iostream>
 
-const int N = 1e6+ 10;
+const int N = 1e6 + 10;
 const int MOD = 1e9 + 7;
 
 int main() {
