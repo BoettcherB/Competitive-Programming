@@ -14,7 +14,7 @@ Example Input:
 3 5
 2 0 2
 
-Output:
+Example Output:
 3
 
 Let dp[i][j] be the number of ways to fill in the missing digits where the
