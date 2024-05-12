@@ -15,7 +15,7 @@ Example Output:
 9
 
 Loop through the array while keeping track of the current sum and the maximum
-sum found. If the current sum goes below zero, reset it to 0.
+sum found. If the current sum goes below zero, then reset it to 0.
 
 */
 
