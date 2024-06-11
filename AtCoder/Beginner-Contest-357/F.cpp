@@ -3,24 +3,48 @@
 const int N = 2e5 + 10;
 const int MOD = 998244353;
 
+struct mint {
+    long long v;
+    mint(long long val = 0) { v = val % MOD + (val < 0) * MOD; }
+    mint& operator+=(const mint o) { if ((v += o.v) > MOD) v -= MOD; return *this; }
+    mint& operator-=(const mint o) { if ((v -= o.v) < 0) v += MOD; return *this; }
+    mint& operator*=(const mint o) { v = v * o.v % MOD; return *this; }
+    mint& operator/=(const mint o) { return *this *= mpow(o, MOD - 2); }
+    mint operator+(const mint o) const { return mint(*this) += o; }
+    mint operator-(const mint o) const { return mint(*this) -= o; }
+    mint operator*(const mint o) const { return mint(*this) *= o; }
+    mint operator/(const mint o) const { return mint(*this) /= o; }
+    friend mint mpow(mint a, long long b) {
+        mint res = 1; while (b) { if (b & 1) res *= a; a *= a; b >>= 1; }
+        return res;
+    }
+    operator long long() const { return v; }
+    friend std::ostream& operator<<(std::ostream& os, const mint& m) {
+        return os << m.v;
+    }
+    friend std::istream& operator>>(std::istream& is, mint& m) {
+        long long val; std::cin >> val; m = mint(val); return is;
+    }
+};
+
 class SegTree {
     int n;
-    long long tree[4 * N];
-    long long sumA[4 * N], sumB[4 * N];
-    long long lazyA[4 * N], lazyB[4 * N];
+    mint tree[4 * N];
+    mint sumA[4 * N], sumB[4 * N];
+    mint lazyA[4 * N], lazyB[4 * N];
 
     void build(int cur, int tl, int tr, int A[N], int B[N]) {
         if (tl == tr) {
-            tree[cur] = (long long) A[tl] * B[tl] % MOD;
-            sumA[cur] = A[tl] % MOD;
-            sumB[cur] = B[tl] % MOD;
+            tree[cur] = mint(A[tl]) * mint(B[tl]);
+            sumA[cur] = A[tl];
+            sumB[cur] = B[tl];
         } else {
             int mid = (tl + tr) / 2;
             build(cur * 2, tl, mid, A, B);
             build(cur * 2 + 1, mid + 1, tr, A, B);
-            tree[cur] = (tree[cur * 2] + tree[cur * 2 + 1]) % MOD;
-            sumA[cur] = (sumA[cur * 2] + sumA[cur * 2 + 1]) % MOD;
-            sumB[cur] = (sumB[cur * 2] + sumB[cur * 2 + 1]) % MOD;
+            tree[cur] = tree[cur * 2] + tree[cur * 2 + 1];
+            sumA[cur] = sumA[cur * 2] + sumA[cur * 2 + 1];
+            sumB[cur] = sumB[cur * 2] + sumB[cur * 2 + 1];
         }
         lazyA[cur] = lazyB[cur] = 0;
     }
@@ -28,15 +52,15 @@ class SegTree {
     void propagate(int cur, int tl, int tr) {
         if (lazyA[cur] == 0 && lazyB[cur] == 0)
             return;
-        tree[cur] = (tree[cur] + lazyA[cur] * sumB[cur]) % MOD;
-        sumA[cur] = (sumA[cur] + lazyA[cur] * (1LL + tr - tl)) % MOD;
-        tree[cur] = (tree[cur] + lazyB[cur] * sumA[cur]) % MOD;
-        sumB[cur] = (sumB[cur] + lazyB[cur] * (1LL + tr - tl)) % MOD;
+        tree[cur] += lazyA[cur] * sumB[cur];
+        sumA[cur] += lazyA[cur] * mint(1 + tr - tl);
+        tree[cur] += lazyB[cur] * sumA[cur];
+        sumB[cur] += lazyB[cur] * mint(1 + tr - tl);
         if (tl != tr) {
-            lazyA[cur * 2] = (lazyA[cur * 2] + lazyA[cur]) % MOD;
-            lazyB[cur * 2] = (lazyB[cur * 2] + lazyB[cur]) % MOD;
-            lazyA[cur * 2 + 1] = (lazyA[cur * 2 + 1] + lazyA[cur]) % MOD;
-            lazyB[cur * 2 + 1] = (lazyB[cur * 2 + 1] + lazyB[cur]) % MOD;
+            lazyA[cur * 2] += lazyA[cur];
+            lazyB[cur * 2] += lazyB[cur];
+            lazyA[cur * 2 + 1] += lazyA[cur];
+            lazyB[cur * 2 + 1] += lazyB[cur];
         }
         lazyA[cur] = lazyB[cur] = 0;
     }
@@ -44,8 +68,7 @@ class SegTree {
     void update(int cur, int tl, int tr, int ql, int qr, int val, bool A) {
         propagate(cur, tl, tr);
         if (ql <= tl && tr <= qr) {
-            if (A) lazyA[cur] = (lazyA[cur] + val) % MOD;
-            else   lazyB[cur] = (lazyB[cur] + val) % MOD;
+            (A ? lazyA[cur] : lazyB[cur]) += val;
             propagate(cur, tl, tr);
             return;
         }
@@ -54,21 +77,20 @@ class SegTree {
         int mid = (tl + tr) / 2;
         update(cur * 2, tl, mid, ql, qr, val, A);
         update(cur * 2 + 1, mid + 1, tr, ql, qr, val, A);
-        tree[cur] = (tree[cur * 2] + tree[cur * 2 + 1]) % MOD;
-        sumA[cur] = (sumA[cur * 2] + sumA[cur * 2 + 1]) % MOD;
-        sumB[cur] = (sumB[cur * 2] + sumB[cur * 2 + 1]) % MOD;
+        tree[cur] = tree[cur * 2] + tree[cur * 2 + 1];
+        sumA[cur] = sumA[cur * 2] + sumA[cur * 2 + 1];
+        sumB[cur] = sumB[cur * 2] + sumB[cur * 2 + 1];
     }
 
-    long long query(int cur, int tl, int tr, int ql, int qr) {
+    mint query(int cur, int tl, int tr, int ql, int qr) {
         propagate(cur, tl, tr);
         if (ql <= tl && tr <= qr)
             return tree[cur];
         if (tl > qr || tr < ql)
             return 0;
         int mid = (tl + tr) / 2;
-        long long q1 = query(cur * 2, tl, mid, ql, qr);
-        long long q2 = query(cur * 2 + 1, mid + 1, tr, ql, qr);
-        return (q1 + q2) % MOD;
+        return query(cur * 2, tl, mid, ql, qr)
+            + query(cur * 2 + 1, mid + 1, tr, ql, qr);
     }
 
 public:
@@ -77,12 +99,10 @@ public:
     }
 
     void update(int ql, int qr, int val, bool A) {
-        if (ql > qr) return;
         update(1, 0, n - 1, ql - 1, qr - 1, val, A);
     }
 
-    long long query(int ql, int qr) {
-        if (ql > qr) return 0;
+    mint query(int ql, int qr) {
         return query(1, 0, n - 1, ql - 1, qr - 1);
     }
 };
