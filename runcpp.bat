@@ -14,7 +14,7 @@ set INPUTFILE=%~dp0in.txt
 
 :: Compile the C++ file
 echo Compiling...
-g++ %CPPFILE% -o %EXEFILE%
+g++ -Wall -Wextra --std=c++17 -DDB_LOCAL %CPPFILE% -o %EXEFILE%
 
 :: Check that the compilation was successful
 if %ERRORLEVEL% NEQ 0 (
