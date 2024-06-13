@@ -28,7 +28,9 @@ struct debug {
         return *this << "]";
     }
 };
-#define pprint(x) (debug() << " [" << #x ": " << x << "] ")
+#define RED "\033[31m"
+#define RESET "\033[0m"
+#define pprint(x) (debug() << RED << " [" << #x ": " << x << "] " << RESET)
 
 int main() {
     std::ios_base::sync_with_stdio(false);
