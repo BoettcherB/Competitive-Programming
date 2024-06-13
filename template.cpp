@@ -30,7 +30,11 @@ struct debug {
 };
 #define RED "\033[31m"
 #define RESET "\033[0m"
+#ifdef DB_LOCAL
 #define pprint(x) (debug() << RED << " [" << #x ": " << x << "] " << RESET)
+#else
+#define pprint(x)
+#endif
 
 int main() {
     std::ios_base::sync_with_stdio(false);
