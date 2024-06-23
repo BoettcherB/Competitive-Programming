@@ -5,7 +5,7 @@ find the length of the longest increasing subsequence. A subsequence is a
 sequence that can be derived from the array by deleting some elements without
 changing the order of the remaining elements.
 
-Constraints
+Constraints:
     1 <= n <= 2,000,000
     1 <= a <= 1,000,000,000
 
