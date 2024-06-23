@@ -3,7 +3,7 @@
 You have n coins, each with a value x. Your task is to find all the money sums
 that can be made with these coins.
 
-Constraints
+Constraints:
     1 <= n <= 100
     1 <= x <= 1000
 
