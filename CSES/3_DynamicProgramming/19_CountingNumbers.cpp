@@ -3,8 +3,8 @@
 Count the number of numbers between a and b (inclusive) where no 2 consecutive
 digits are the same
 
-Constraints
-0 <= a <= b <= 1,000,000,000,000,000,000
+Constraints:
+    0 <= a <= b <= 1,000,000,000,000,000,000
 
 Example Input:
 123 321
