@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Collecting Numbers
+
 You are given an array that contains each number from 1 to n exactly once. Your
 task is to collect each number in increasing order. On each round, you go
 through the array from left to right and collect as many numbers as possible.

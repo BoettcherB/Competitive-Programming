@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Dice Combinations
+
 Count the number of ways to construct n by throwing a dice 1 or more times.
 Each dice roll results in a number between 1 and 6 inclusive. Print the answer
 modulo 10^9 + 7.

@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Two Sets
+
 You are given an integer n. Your task is to count the number of ways that the
 numbers from 1 to n can be divided into 2 sets of equal sum. Print the answer
 mod 1e9 + 7.

@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Elevator Rides
+
 There are n people who want to get to the top of a building that only has one
 elevator. Each person has a weight w_i, and the maximum weight capacity of the
 elevator is x. What is the minimum number of elevator rides needed?

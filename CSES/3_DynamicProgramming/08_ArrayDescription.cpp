@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Array Description
+
 There is an array of length n with numbers between 1 and m. The absolute
 difference between 2 adjacent values is at most 1. You are given some of the
 digits of the array, while others are unknown. Your task is to count the number

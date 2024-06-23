@@ -1,11 +1,13 @@
 /*
 
+CSES: Sorting and Searching: Sliding Window Median
+
 You are given an array of n integers [a0, a1, ..., an] and an integer k. Your
 task is to find the median value for each window of length k ([0, k-1], [1, k],
 [2, k+1], ..., [n-k, n-1]). Print each of the n-k+1 medians. If k is even and
 there are 2 medians per window, print the smaller value.
 
-Constraints
+Constraints:
     1 <= k <= n <= 200,000
     1 <= a <= 1,000,000,000
 

@@ -1,9 +1,11 @@
 /*
 
+CSES: Sorting and Searching: Subarray Distinct Values
+
 You are given an array of n integers [a0, a1, ..., an]. Your task is to find
 the number of subarrays that have at most k distinct values.
 
-Constraints
+Constraints:
     1 <= k <= n <= 200,000
     1 <= a <= 1,000,000,000
 

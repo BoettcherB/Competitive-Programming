@@ -1,9 +1,12 @@
 /*
+
+CSES: Sorting and Searching: Nearest Smaller Values
+
 You are given an array of n integers [x0, x1, ..., xn]. Your task is to find,
 for each integer, the nearest position to its left containing a smaller value.
 If there is no smaller value to the left, print 0 for that integer.
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     1 <= x <= 1,000,000,000
 

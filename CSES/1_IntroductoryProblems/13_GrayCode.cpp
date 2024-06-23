@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Gray Code
+
 You are given an integer n. Create a list of all the 2^n bit strings of length
 n, but order them in such a way that any two successive strings differ by only
 one bit.

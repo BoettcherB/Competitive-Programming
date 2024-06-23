@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Josephus Problem 1
+
 Consider a game where there are n children in a circle. During the game, every
 other child is removed from the circle until there are no children left. In
 which order will the children be removed?

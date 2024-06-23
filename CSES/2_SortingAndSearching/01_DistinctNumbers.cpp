@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Distinct Numbers
+
 You are given a list of n integers [x1...xn]. Determine the number of distinct
 values in the list.
 

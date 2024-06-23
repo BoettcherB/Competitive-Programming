@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Two Knights
+
 You are given an integer n. For all 1 <= k <= n, find the number of possible
 ways that 2 knights can be placed on a kxk chessboard so that they cannot
 attack each other.

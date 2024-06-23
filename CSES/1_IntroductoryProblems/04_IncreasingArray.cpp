@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Increasing Array
+
 You are given an array of n elements. If one operation involves increasing a
 single element by 1, determine the minimum number of operations needed to make
 the array increasing (a[i-1] <= a[i] for all 1 < i <= n).

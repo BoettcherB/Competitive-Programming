@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Ferris Wheel
+
 There are n children who want to ride on a ferris wheel. Each gondola can
 either have 1 or 2 children and has a maximum weight capacity of x. You are
 given the weight w1...wn of every child. Determine the minimum number of

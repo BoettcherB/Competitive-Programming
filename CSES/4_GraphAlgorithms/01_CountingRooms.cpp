@@ -1,5 +1,7 @@
 /*
 
+CSES: Graph Algorithms: Counting Rooms
+
 You are given a grid of nxm cells. Each cell is either empty '.' or a wall '#'.
 Your task is to count the number of empty rooms.
 

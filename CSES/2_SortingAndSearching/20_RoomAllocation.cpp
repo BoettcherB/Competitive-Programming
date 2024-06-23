@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Room Allocation
+
 There are n customers at a hotel, each who want their own room. You are given
 their arrival and departure day (a and b). Your task is to find the minimum
 number of rooms required to accommodate every customer, as well as a possible

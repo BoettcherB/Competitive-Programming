@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Coin Combinations 2
+
 There are n coins, each with a positive integer value c_i. Using these coins,
 find the number of distinct ORDERED ways that you can produce the sum x.
 
@@ -12,7 +14,7 @@ Example Input:
 3 9
 2 3 5
 
-Output:
+Example Output:
 3
 
 This problem is very similar to the previous problem, except now we need to

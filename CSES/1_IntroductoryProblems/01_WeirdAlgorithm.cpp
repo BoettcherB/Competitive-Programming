@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Weird Algorithm
+
 You are given a single integer n. Perform the following operation on n until
 n is equal to 1:
  - If n is even, n = n / 2

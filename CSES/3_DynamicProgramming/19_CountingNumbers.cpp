@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Counting Numbers
+
 Count the number of numbers between a and b (inclusive) where no 2 consecutive
 digits are the same
 

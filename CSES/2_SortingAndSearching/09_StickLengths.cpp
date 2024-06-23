@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Stick Lengths
+
 There are n sticks, each with length p. Your task is to modify the sticks so
 that they are all the same length. Changing a stick from length p1 to length p2
 costs |p2 - p1| units. Find the minimum cost required to make all sticks the

@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Trailing Zeros
+
 Given an integer n, find the number of trailing zeros of n! (n factorial).
 
 Constraints:

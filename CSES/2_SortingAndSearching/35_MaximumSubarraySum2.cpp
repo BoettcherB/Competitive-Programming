@@ -1,9 +1,11 @@
 /*
 
+CSES: Sorting and Searching: Maximum Subarray Sum 2
+
 You are given an array arr of n integers. Your task is to find the maximum sum
 of any subarray that has a length between a and b inclusive.
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     1 <= a <= b <= n
     -1,000,000,000 <= arr[i] <= 1,000,000,000

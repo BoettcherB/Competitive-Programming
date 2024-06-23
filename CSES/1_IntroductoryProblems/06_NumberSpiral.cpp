@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Number Spiral
+
 If we arrange the integer numbers starting at 1 in a spiral grid (as shown in
 this picture: https://cses.fi/problemset/task/1071/) where cell (1, 1) is at
 the top left, find the number in cell (y, x) (row y and column x). Do this for

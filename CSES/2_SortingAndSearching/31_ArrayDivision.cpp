@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Apple Division
+
 You are given an array of n integers [a0, a1, ..., an]. Your task is to divide
 the array into k subarrays such that the largest sum of a subarray is as small
 as possible.

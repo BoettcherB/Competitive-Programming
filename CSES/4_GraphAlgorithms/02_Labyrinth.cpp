@@ -1,5 +1,7 @@
 /*
 
+CSES: Graph Algorithms: Labyrinth
+
 You are given an nxm grid of cells. Some cells are empty '.' and some cells are
 walls '#'. There is a start cell 'A' and an end cell 'B'. Your task is to find
 the shortest path from the start to the end. If such a path exists, print "YES"
@@ -12,7 +14,6 @@ Constraints:
     There is exactly one 'A' and one 'B'.
 
 Example Input:
-
 5 8
 ########
 #.A#...#

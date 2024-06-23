@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Creating Strings
+
 You are given a string s of length n. Find all possible strings that can be
 created using the characters of s. Print the number of strings that can be
 created, and then the strings themselves in alphabetical order.

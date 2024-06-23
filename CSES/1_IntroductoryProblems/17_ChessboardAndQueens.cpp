@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Chessboard and Queens
+
 Determine how many ways you can place 8 queens on a chessboard without them
 being able to attack each other. Additionally, each square on the board is
 either free or blocked. A queen cannot be placed on a blocked square but

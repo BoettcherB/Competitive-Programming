@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Projects
+
 There are n project, each with a start and end day [a, b] and a reward r. If
 you choose to attend a project, you must attend it the entire time (including
 the entire final day). What is the maximum reward you can earn?

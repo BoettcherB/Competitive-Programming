@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Rectangle Cutting
+
 You are given a rectangle of size axb. Your task is to split it into squares
 such that all side lengths remain integers, and find the minimum number of cuts
 required.

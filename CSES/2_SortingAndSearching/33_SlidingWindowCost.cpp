@@ -1,11 +1,13 @@
 /*
 
+CSES: Sorting and Searching: Sliding Window Cost
+
 You are given an array of n integers [a0, a1, ..., an] and an integer k. Your
 task is to calculate, for each window of k elements, the cost of making all
 elements equal. The cost to convert an integer a into an integer b is |a-b|.
 Print n-k+1 values: the costs.
 
-Constraints
+Constraints:
     1 <= k <= n <= 200,000
     1 <= a <= 1,000,000,000
 

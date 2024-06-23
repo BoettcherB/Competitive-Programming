@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Removing Digits
+
 You are given a number n. In each step, you may subtract one of the digits from
 that number (ex: for n = 27, you can either subtract 2 or 7 to get either 25 or
 20). Print the minimum number of steps needed to reach 0.

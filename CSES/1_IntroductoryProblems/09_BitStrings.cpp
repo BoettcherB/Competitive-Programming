@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Bit Strings
+
 Given an integer n, calculate the number of bit strings of length n. Print the
 answer modulo 10^9 + 7.
 

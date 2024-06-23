@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Palindrome Reorder
+
 You are given a string consisting of n letters A-Z. Rearrange the letters so
 that the string is a palindrome. If this is not possible, print "NO SOLUTION".
 

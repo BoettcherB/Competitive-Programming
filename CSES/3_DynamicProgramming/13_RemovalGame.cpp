@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Removal Game
+
 There is a list of n numbers [x0, x1, ..., xn]. In a 2-player game, each player
 takes turns removing either the first or last number from the list and adding
 that number to their score. Both players try to maximize their score. What is

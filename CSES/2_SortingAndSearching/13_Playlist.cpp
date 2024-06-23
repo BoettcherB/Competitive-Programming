@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Playlist
+
 You are given a list of n integers x1...xn. What is the length of the longest
 sequence of succesive integers that are unique?
 

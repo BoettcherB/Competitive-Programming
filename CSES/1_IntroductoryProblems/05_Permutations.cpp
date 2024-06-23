@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Permutations
+
 Given an integer n, construct a permutation of the numbers 1..n where no two
 adjacent elements have a different of 1. If no such permutation exists, print
 "NO SOLUTION". If there are multiple possible solutions, print any of them.

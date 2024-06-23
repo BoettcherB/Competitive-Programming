@@ -1,11 +1,13 @@
 /*
 
+CSES: Sorting and Searching: Tasks and Deadlines
+
 There are n tasks that we have to process, one after the other, and each task
 has a duration and a deadline. The reward for completing a task is d - f where
 d is the deadline and f is the time the task is finished. What is the maximum
 possible reward after processing all tasks?
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     1 <= duration, deadline <= 1,000,000
 

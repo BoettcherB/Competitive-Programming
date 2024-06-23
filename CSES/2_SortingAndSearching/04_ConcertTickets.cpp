@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Concert Tickets
+
 There are n tickets, each with a price p. There are also m customers. Customers
 arrive in order and specify the maximum amount h that they are willing to pay
 for a ticket. If a ticket exists with price p < h, that customer will purchase

@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Coin Combinations 1
+
 There are n coins, each with a positive integer value c_i. Using these coins,
 find the number of distinct ways that you can produce the sum x.
 
@@ -12,7 +14,7 @@ Example Input:
 3 9
 2 3 5
 
-Output:
+Example Output:
 8
 
 Let dp[i] be the number of ways to make the sum i with the given coins. First,

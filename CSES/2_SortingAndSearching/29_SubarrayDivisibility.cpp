@@ -1,9 +1,11 @@
 /*
 
+CSES: Sorting and Searching: Subarray Divisibility
+
 You are given an array of n integers [a0, a1, ..., an]. Your task is to count
 the number of subarrays where the sum of values is divisible by n.
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     -1,000,000,000 <= a <= 1,000,000,000
 

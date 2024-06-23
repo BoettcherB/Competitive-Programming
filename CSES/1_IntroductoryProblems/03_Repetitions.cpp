@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Repetitions
+
 You are given a string of length n containing the characters A, C, G, and T.
 Find the length of the longest repetition in this string (a repetition is a
 substring where all characters are the same).

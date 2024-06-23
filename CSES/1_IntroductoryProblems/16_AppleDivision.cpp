@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Apple Division
+
 You have n apples, each with its own weight w_i. Your task is to divide the
 apples into 2 groups so that the difference in weights of the groups is
 minimal. Print the minimum possible difference in weights.

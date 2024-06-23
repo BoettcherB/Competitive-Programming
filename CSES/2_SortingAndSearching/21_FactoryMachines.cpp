@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Factory Machines
+
 There are n machines in a factory. Each machine has a time k which is the time
 in seconds it takes that machine to make 1 product. The goal is to make t
 products. What is the shortest amount of time needed to make all t products?

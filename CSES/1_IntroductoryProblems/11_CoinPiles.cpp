@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Coin Piles
+
 You have 2 coin piles containing a and b coins. On one move you can take 2
 coins off of one pile and 1 coin off of the other. Is it possible to empty
 both piles? Answer this for T test cases.
@@ -14,7 +16,7 @@ Example Input:
 2 2
 3 3
 
-Output:
+Example Output:
 YES
 NO
 YES

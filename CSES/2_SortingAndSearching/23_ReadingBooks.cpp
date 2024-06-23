@@ -1,11 +1,13 @@
 /*
 
+CSES: Sorting and Searching: Reading Books
+
 There are n books and each book has a time t that it takes someone to read. Two
 people want to fully read each book. They cannot read the same book at the same
 time. What is the minimum amount of time needed for both people to read all the
 books?
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     1 <= t <= 1,000,000,000
 

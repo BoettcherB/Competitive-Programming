@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Grid Paths
+
 You are given an nxn grid of cells. Each cell is either empty ('.') or has a
 trap ('*'). Find the number of paths from the top left to the top right,
 without stepping on any traps, if you can only move down and to the right.

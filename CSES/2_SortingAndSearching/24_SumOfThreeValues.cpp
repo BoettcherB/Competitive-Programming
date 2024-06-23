@@ -1,9 +1,11 @@
 /*
 
+CSES: Sorting and Searching: Sum of Three Values
+
 You are given n integers and you need to find three of them (at distinct
 positions) whose sum is x. Print the indexes of the three integers.
 
-Constraints
+Constraints:
     1 <= n <= 5000
     1 <= x, a <= 1,000,000,000
 

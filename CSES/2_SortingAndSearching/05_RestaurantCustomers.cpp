@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Restaurant Customers
+
 There n customers in a restaurant. You are given their arrival time and their
 leaving time (a and b). Determine the maximum number of people that were in the
 restaurant at any one point in time.

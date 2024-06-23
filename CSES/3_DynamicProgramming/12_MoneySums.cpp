@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Money Sums
+
 You have n coins, each with a value x. Your task is to find all the money sums
 that can be made with these coins.
 

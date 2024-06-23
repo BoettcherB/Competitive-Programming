@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Apartments
+
 There are n applicants and m free apartments. Each applicant has a desired
 apartment size a, and each apartment has a size b. If b is within k units of a,
 the applicant will accept the apartment. The task is to distribute the

@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Book Shop
+
 A book shop sells n books. Each book has a price h and a number of pages s. The
 maximum amount of money you can spend is x. What is the maximum number of pages
 you can buy?

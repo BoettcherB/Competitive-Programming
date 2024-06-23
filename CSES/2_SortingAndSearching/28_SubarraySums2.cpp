@@ -1,9 +1,11 @@
 /*
 
+CSES: Sorting and Searching: Subarray Sums 2
+
 You are given an array of n positive integers [a0, a1, ..., an]. Your task is
 to count the number of subarrays that have the sum x.
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     -1,000,000,000 <= x, a <= 1,000,000,000
 

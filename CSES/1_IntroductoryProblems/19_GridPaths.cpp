@@ -1,5 +1,7 @@
 /*
 
+CSES: Introductory Problems: Grid Paths
+
 You have a 7x7 grid. You start at the top left square and want to end at the
 bottom left square while visiting all squares only once. A path is described as
 a string consisting of 48 moves (represented by L, R, U, and D). You are given

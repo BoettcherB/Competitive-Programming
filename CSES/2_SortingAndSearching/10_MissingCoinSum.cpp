@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Missing Coin Sum
+
 You have n coins with positive integer values x1...xn. What is the smallest sum
 you cannot create using a subset of these coins?
 

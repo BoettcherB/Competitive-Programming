@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Traffic Lights
+
 There is a street of length x. n traffic lights (each represented as an integer
 p from 1 to x-1) are added to the street sequentially. Your task is to find the
 longest stretch of road without a light after each addition.

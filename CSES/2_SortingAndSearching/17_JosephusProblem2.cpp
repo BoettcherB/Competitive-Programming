@@ -1,5 +1,7 @@
 /*
 
+CSES: Sorting and Searching: Josephus Problem 2
+
 Consider a game where there are n children in a circle. During the game,
 repeatedly k children are skipped and one child is removed from the circle.
 In which order will the children be removed?

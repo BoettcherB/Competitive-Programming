@@ -1,5 +1,7 @@
 /*
 
+CSES: Dynamic Programming: Minimizing Coins
+
 There are n coins, each with a positive integer value c_i. Using these coins,
 find the minimum number of coins needed to produce the sum x. If it is not
 possible to produce x, print -1.

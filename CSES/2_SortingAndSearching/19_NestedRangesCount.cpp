@@ -1,12 +1,14 @@
 /*
 
+CSES: Sorting and Searching: Nested Ranges Count
+
 You are given n ranges [a, b]. Your task is to find out, for each range, how
 many other ranges it contains and how many other ranges contain it. Output a
 line that describes for each range (in the input order) how many other ranges
 it contains, Then another line that describes for each range how many other
 ranges contain it.
 
-Constrains:
+Constraints:
     1 <= n <= 200,000
     1 <= a, b <= 1,000,000,000
     Each range appears only once
