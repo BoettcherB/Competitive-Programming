@@ -4,7 +4,7 @@ There are n project, each with a start and end day [a, b] and a reward r. If
 you choose to attend a project, you must attend it the entire time (including
 the entire final day). What is the maximum reward you can earn?
 
-Constraints
+Constraints:
     1 <= n <= 200,000
     1 <= a_i <= b_i <= 1,000,000,000
     1 <= p_i <= 1,000,000,000
