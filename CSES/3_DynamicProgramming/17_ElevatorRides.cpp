@@ -5,9 +5,9 @@ elevator. Each person has a weight w_i, and the maximum weight capacity of the
 elevator is x. What is the minimum number of elevator rides needed?
 
 Constraints:
-1 <= n <= 20
-1 <= x <= 1,000,000,000
-1 <= w_i <= x
+    1 <= n <= 20
+    1 <= x <= 1,000,000,000
+    1 <= w_i <= x
 
 Example Input:
 4 10
