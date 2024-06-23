@@ -30,10 +30,10 @@ struct debug {
         return *this << "]";
     }
 };
-#define RED "\033[31m"
-#define RESET "\033[0m"
+#define RED_TXT "\033[31m"
+#define RESET_TXT "\033[0m"
 #ifdef DB_LOCAL
-#define pprint(x) (debug() << RED << " [" << #x ": " << (x) << "] " << RESET)
+#define pprint(x) (debug() << RED_TXT << " [" << #x ": " << (x) << "] " << RESET_TXT)
 #else
 #define pprint(x)
 #endif
@@ -47,10 +47,18 @@ struct mint {
     mint& operator-=(const mint o) { if ((v -= o.v) < 0) v += MOD; return *this; }
     mint& operator*=(const mint o) { v = v * o.v % MOD; return *this; }
     mint& operator/=(const mint o) { return *this *= mpow(o, MOD - 2); }
-    mint operator+(const mint o) const { return mint(*this) += o; }
-    mint operator-(const mint o) const { return mint(*this) -= o; }
-    mint operator*(const mint o) const { return mint(*this) *= o; }
-    mint operator/(const mint o) const { return mint(*this) /= o; }
+    mint operator+(const mint o) const { return mint(v) += o; }
+    mint operator-(const mint o) const { return mint(v) -= o; }
+    mint operator*(const mint o) const { return mint(v) *= o; }
+    mint operator/(const mint o) const { return mint(v) /= o; }
+    mint operator+(long long x) const { return mint(v + x); }
+    mint operator-(long long x) const { return mint(v - x); }
+    mint operator*(long long x) const { return mint(v * x); }
+    mint operator/(long long x) const { return mint(v / x); }
+    mint operator+(int x) const { return mint(v + x); }
+    mint operator-(int x) const { return mint(v - x); }
+    mint operator*(int x) const { return mint(v * x); }
+    mint operator/(int x) const { return mint(v / x); }
     friend mint mpow(mint a, long long b) {
         mint res = 1; while (b) { if (b & 1) res *= a; a *= a; b >>= 1; }
         return res;
