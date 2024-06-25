@@ -34,8 +34,10 @@ struct debug {
 #define RESET_TXT "\033[0m"
 #ifdef DB_LOCAL
 #define pprint(x) (debug() << RED_TXT << " [" << #x ": " << (x) << "] " << RESET_TXT)
+#define db(x) std::cerr << "<" << (x) << ">" << std::endl;
 #else
 #define pprint(x)
+#define db(x)
 #endif
 
 const int MOD = 998244353;
