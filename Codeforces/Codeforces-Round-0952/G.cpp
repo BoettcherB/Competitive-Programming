@@ -17,13 +17,10 @@ have d digits where l < d <= r. We can solve this by finding the answer for all
 numbers that have up to r digits, and then subtracting the numbers that have up
 to l digits (ie. count(l, r, k) = count(0, r, k) - count(0, l, k)). To find the
 number of numbers with <= d digits that satisfy d[i] <= 9/k, we simply need to
-take the number of possible values per digits (which is 9/k+1) to the d'th
-power (because we are choosing from 9/k+1 values d times). Therefore, count(0,
-r, k) = (9/k+1)^r and count(0, l, k) = (9/k+1)^l.
-
-To find these values, we can use binary exponentiation which can solve a^b % m
-in O(log(b)) time. Below, I am using a custom wrapper around a long long which
-automatically applies mod and comes with a pow(a, b) function.
+take the number of possible values per digit (which is 9/k+1) to the d'th power
+(because we are choosing from 9/k+1 values d times). Therefore, count(0, r, k)
+= (9/k+1)^r and count(0, l, k) = (9/k+1)^l. To find these values, we can use
+binary exponentiation which can solve a^b % m in O(log(b)) time.
 
 */
 
@@ -31,29 +28,17 @@ automatically applies mod and comes with a pow(a, b) function.
 
 const int MOD = 1e9 + 7;
 
-struct mint {
-    long long v;
-    mint(long long val = 0) { v = val % MOD + (val < 0) * MOD; }
-    mint& operator+=(const mint o) { if ((v += o.v) > MOD) v -= MOD; return *this; }
-    mint& operator-=(const mint o) { if ((v -= o.v) < 0) v += MOD; return *this; }
-    mint& operator*=(const mint o) { v = v * o.v % MOD; return *this; }
-    mint& operator/=(const mint o) { return *this *= mpow(o, MOD - 2); }
-    mint operator+(const mint o) const { return mint(*this) += o; }
-    mint operator-(const mint o) const { return mint(*this) -= o; }
-    mint operator*(const mint o) const { return mint(*this) *= o; }
-    mint operator/(const mint o) const { return mint(*this) /= o; }
-    friend mint mpow(mint a, long long b) {
-        mint res = 1; while (b) { if (b & 1) res *= a; a *= a; b >>= 1; }
-        return res;
+long long binexp(long long a, long long b, long long m = MOD) {
+    a %= m;
+    long long res = 1;
+    while (b) {
+        if (b & 1)
+            res = res * a % m;
+        a = a * a % m;
+        b >>= 1;
     }
-    operator long long() const { return v; }
-    friend std::ostream& operator<<(std::ostream& os, const mint& m) {
-        return os << m.v;
-    }
-    friend std::istream& operator>>(std::istream& is, mint& m) {
-        long long val; std::cin >> val; m = mint(val); return is;
-    }
-};
+    return res;
+}
 
 int main() {
     std::ios_base::sync_with_stdio(false);
@@ -63,8 +48,9 @@ int main() {
     int tc;
     std::cin >> tc;
     while (tc--) {
-        mint l, r, k;
+        long long l, r, k;
         std::cin >> l >> r >> k;
-        std::cout << mpow(9 / k + 1, r) - mpow(9 / k + 1, l) << '\n';
+        long long res = binexp(9 / k + 1, r) - binexp(9 / k + 1, l);
+        std::cout << (res + MOD) % MOD << '\n';
     }
 }
