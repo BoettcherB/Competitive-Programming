@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <string>
 #include <set>
+#include <cassert>
 
 template <class T> struct rge { T b, e; };
 template <class T> rge<T> range(T i, T j) { return rge<T>{i, j}; }
