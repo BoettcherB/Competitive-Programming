@@ -27,7 +27,7 @@ a single pair of vertices.
 
 To solve this problem we can use the Bellman-Ford algorithm. This algorithm
 allows us to find the shortest path from a vertex to all other vertices even if
-there are negative edge weights. It is also usefule here because it allows us
+there are negative edge weights. It is also useful here because it allows us
 to detect negative weight cycles. For this problem, we are looking for positive
 cycles, not negative cycles, though the logic is exactly the same. We just need
 to initialize all distances to -infinity instead of infinity and relaxation on
