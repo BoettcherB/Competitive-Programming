@@ -5,6 +5,8 @@
 #include <set>
 #include <queue>
 #include <list>
+#include <stack>
+#include <map>
 #include <cmath>
 #include <cassert>
 
@@ -33,7 +35,9 @@ int main() {
         std::cin >> n;
         
     }
+
 }
+
 /*
 
 
