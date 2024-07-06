@@ -11,7 +11,7 @@
 #ifdef DB_LOCAL
 #include "algorithms/pprint.hpp"
 #else
-#define pprint(x)
+#define pprint(...)
 #define db(x)
 #endif
 
