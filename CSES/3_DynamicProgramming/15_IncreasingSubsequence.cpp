@@ -64,9 +64,6 @@ int main() {
             dp.push_back(a);
         else
             dp[itr - dp.begin()] = a;
-        for (int i = 0; i < (int) dp.size(); ++i) {
-            std::cout << dp[i] << " \n"[i == (int) dp.size() - 1];
-        }
     }
     std::cout << dp.size() << '\n';
 }
