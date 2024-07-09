@@ -19,22 +19,7 @@
 
 
 
-
-
-
-int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
-    // freopen("in.txt", "r", stdin);
-
-    int tc;
-    std::cin >> tc;
-    while (tc--) {
-        int n;
-        std::cin >> n;
-        
-    }
+void solve() {
 
 }
 
@@ -43,3 +28,16 @@ int main() {
 
 
 */
+
+int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    // freopen("in.txt", "r", stdin);
+
+    int tc = 1;
+    // std::cin >> tc;
+    while (tc--) {
+        solve();
+    }
+}
